@@ -70,8 +70,8 @@ __version__ = Path("moviepy/version.py").read_text().strip().split('"')[1][:-1]
 
 # Define the requirements for specific execution needs.
 requires = [
-    "decorator>=4.0.2,<6.0",
-    "imageio>=2.5,<3.0",
+    "decorator>=4.0.2",
+    "imageio>=2.5",
     "imageio_ffmpeg>=0.2.0",
     "numpy>=1.17.3",
     "proglog<=1.0.0",
@@ -91,13 +91,13 @@ optional_reqs = [
 doc_reqs = [
     "numpydoc<2.0",
     "Sphinx==3.4.3",
-    "sphinx-rtd-theme==0.5.1",
+    "sphinx-rtd-theme>=0.5.1",
 ]
 
 test_reqs = [
-    "coveralls>=3.0,<4.0",
-    "pytest-cov>=2.5.1,<3.0",
-    "pytest>=3.0.0,<7.0.0",
+    "coveralls>=3.0",
+    "pytest-cov>=2.5.1",
+    "pytest>=3.0.0",
 ]
 
 lint_reqs = [
@@ -106,7 +106,7 @@ lint_reqs = [
     "flake8-absolute-import>=1.0",
     "flake8-docstrings>=1.6.0",
     "flake8-rst-docstrings>=0.2.5",
-    "flake8-implicit-str-concat==0.3.0",
+    "flake8-implicit-str-concat>=0.3.0",
     "isort>=5.10.1",
     "pre-commit>=2.19.0",
 ]
@@ -144,6 +144,7 @@ setup(
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
         "Topic :: Multimedia",
         "Topic :: Multimedia :: Sound/Audio",
         "Topic :: Multimedia :: Sound/Audio :: Analysis",
